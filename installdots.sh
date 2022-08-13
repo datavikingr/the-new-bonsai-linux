@@ -75,10 +75,8 @@ else
 	curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sudo sh
 	rm ./README.md
 	rm ./LICENSE
-
-	## Add sddm files at /etc/sddm.conf & /usr/share/sddm/themes/mount/* into ~/.config; out in the shell
-	## TODO: script-cp the above
-	## TODO: rm them within .config context
-	
+	sudo cp ~/.config/sddm/mount/* /usr/share/sddm/themes/mount/
+	sudo cp /etc/sddm.conf .config/sddm/sddm-backup.conf
+	sudo cp ~/.config/sddm/etc-sddm.conf /etc/sddm.conf
 	cp * $HOME/
 fi
