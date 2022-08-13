@@ -123,6 +123,6 @@ alias bonsai='cbonsai -S'
 alias news='curl us.getnews.tech'
 alias weather='curl wttr.in/~Joppa+MD'
 alias moon='curl wttr.in/Moon'
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 
 neofetch | lolcat
