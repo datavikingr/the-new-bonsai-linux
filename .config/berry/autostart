@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# Autostart System Applications
+sxhkd -c ~/.config/berry/sxhkdrc &
+feh --bg-scale ~/.config/backgrounds/pine.jpg &
+picom --config ~/.config/picom/picom.conf &
+bash ~/.config/polybar/launch.sh &
+pulseaudio &
+dunst &
+bash ~/.config/berry/wifi.sh &
+
+# Workspaces
+berryc name_desktop 0 " "
+berryc name_desktop 1 "  "
+berryc name_desktop 2 "  "
+berryc name_desktop 3 "  "
+berryc name_desktop 4 "  "
+berryc name_desktop 5 "爵 "
+berryc name_desktop 6 " ﭮ "
+berryc name_desktop 7 "  "
+berryc name_desktop 8 "  "
+berryc name_desktop 9 "  "
+
+# Set Window Options
+berryc border_width       3
+berryc inner_border_width 2
+berryc title_height       25
+berryc top_gap            40
+berryc focus_color         3b573d
+berryc unfocus_color       74533e
+berryc inner_focus_color   3b573d
+berryc inner_unfocus_color 74533e
+berryc text_focus_color    111111
+berryc text_unfocus_color  eeeeee
+berryc decorate_new 	"true"
+berryc smart_place 		"true"
+berryc draw_text   		"true"
+berryc edge_lock   		"true"
+berryc set_font    		"Hack-11"

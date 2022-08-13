@@ -1,0 +1,73 @@
+#########################
+# ALL terminals hotkeys #
+#########################
+
+# host terminal emulator
+super + Return
+	kitty
+
+# distrobox arch terminal
+super + alt + {a, d, f}
+	berryc switch_workspace 7 && kitty distrobox enter {arch, debian, fedora} & sleep 1; berryc toggle_decorations && berryc fullscreen
+
+#################
+# App Launchers #
+#################
+
+# file manager
+super + f
+	thunar
+
+# program launcher
+super + {space, r}
+	rofi -show drun
+
+# brave browser
+super + b
+	berryc switch_workspace 5 && brave-browser & sleep 1; berrytile c
+
+# discord
+super + d
+	berryc switch_workspace 6 && discord
+
+#####################
+# System Management #
+#####################
+
+# restart desktop, or poly/sxhkd
+ctrl + alt + {Delete, Escape}
+       {pkill -USR1 -x berry, bash ~/rpoly & pkill -USR1 -x sxhkd}
+
+###############
+# Window Mgmt #
+###############
+
+super + shift + {q, w, e, d, c, x, z, a, s}
+	berrytile {tl, t, tr, r, br, b, bl, l, c}
+
+super + {Left, Down, Up, Right}
+   berryc window_move {-50 0, 0 50, 0 -50, 50 0}
+
+super + shift +  {Left, Down, Up, Right}
+   berryc window_resize {-50 0, 0 50, 0 -50, 50 0}
+
+super + {1-9}
+   berryc switch_workspace {0-8}
+
+super + shift + {1-9}
+   berryc send_to_workspace {0-8}
+
+super + m
+   berryc window_monocle
+
+super + n
+   berryc toggle_decorations
+
+{alt, super} + Tab
+       berryc cycle_focus
+
+alt + F4
+   berryc window_close
+
+~button1
+   berryc pointer_focus

@@ -1,0 +1,13 @@
+{
+  "segments": [
+    "time",
+    "username",
+    "hostname",
+    "ssh",
+    "cwd",
+    "git",
+    "hg",
+    "jobs"
+  ],
+  "theme": "~/.config/powerline-shell/themes/pine.py"
+}
