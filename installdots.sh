@@ -18,19 +18,15 @@ rm berry.deb
 sudo touch /usr/share/xsessions/berry.desktop
 
 ## TODO: This needs a test to check for whether sudo is required or where/how
-cat << EOF > /usr/share/xsessions/berry.desktop
-[Desktop Entry]
-Encoding=UTF-8
-Name=berry
-Comment=berry - a small window manager
-Exec=berry
-Type=XSession
-EOF
+
+sudo mv ./.config/berry/berry.desktop /usr/share/xsessions/berry.desktop
 read -p "Would you like to install the optional packages? (y/n)" optpack
 if [["$optpack" == "n"]]; then
 	exit 0
 else
-	sudo apt install flatpak zsh micro ranger sddm thunar notepadqq scrot lolcat docker neofetch nala timeshift gnugo gnuchess htop bmon cbonsai cmatrix fortune -y
+	sudo apt install zsh micro ranger sddm thunar notepadqq scrot lolcat docker neofetch nala timeshift gnugo gnuchess htop bmon cbonsai cmatrix fortune -y
+	sudo apt install flatpak -y
+	sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 	pip install powerline-shell
 	cat << EOF > .bashrc
 	#making sure your local binaries are accounted for
