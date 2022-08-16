@@ -35,3 +35,31 @@ The different distros action is powered by [distrobox](https://github.com/89luca
  - stacer - GUI top/htop, but on steroids with a sleek and modern UX/UI.
  - mainline - kernel management in the Debian family that doesn't hurt? yes, please, mate!
  - distrobox - distro-hopping is for suckers. Supports client GUI apps running on the host!! This is seriously magic!!
+
+# Installation
+
+cd into your desired source folder. For instance, ~/code or ~/src. Then, the following:
+
+## clone the repo
+
+```
+git clone https://github.com/futurehaskins/dotfiles
+cd dotfiles
+```
+
+## seriously, review the code before running it.
+```
+cat install.dots.sh
+```
+
+## use nano/vim/emacs/whatever to edit the script as desired.
+ Most of it is structural, but you might only like some of the optional packages. Feel free to comment them out.
+
+## run the script
+```
+bash installdots.sh
+``` 
+Or
+```
+./installdots.sh
+```
