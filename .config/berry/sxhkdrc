@@ -6,9 +6,15 @@
 super + Return
 	kitty
 
-# distrobox arch terminal
-super + alt + {a, d, f}
-	berryc switch_workspace 7 && kitty distrobox enter {arch, debian, fedora} & sleep 1; berryc toggle_decorations && berryc fullscreen
+# distrobox terminals
+super + alt + a
+	berryc switch_workspace 7 && kitty distrobox enter arch & sleep 1; berryc toggle_decorations && berryc fullscreen
+
+super + alt + d
+	berryc switch_workspace 8 && kitty distrobox enter debian & sleep 1; berryc toggle_decorations && berryc fullscreen
+
+super + alt + f
+	berryc switch_workspace 9 && kitty distrobox enter fedora & sleep 1; berryc toggle_decorations && berryc fullscreen
 
 #################
 # App Launchers #
