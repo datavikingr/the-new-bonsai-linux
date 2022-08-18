@@ -49,7 +49,7 @@ cd dotfiles
 
 ## seriously, review the code before running it.
 ```
-cat install.dots.sh
+cat installdots.sh
 ```
 
 ## use nano/vim/emacs/whatever to edit the script as desired.
