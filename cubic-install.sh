@@ -22,7 +22,7 @@ apt remove --purge gdm3 gnome-shell -y
 apt automremove
 
 #berry and dependencies
-apt install wget curl libx11-dev libxft-dev libxinerama-dev -y
+apt install wget curl apt-utils libx11-dev libxft-dev libxinerama-dev -y
 wget https://github.com/barnumbirr/berry-debian/releases/download/v0.1.11-1/berry_0.1.11-1_amd64_bullseye.deb
 dpkg -i berry_0.1.11-1_amd64_bullseye.deb
 rm berry_0.1.11-1_amd64_bullseye.deb
@@ -37,6 +37,8 @@ cp -r .config/sddm/mount/* /usr/share/sddm/themes/mount/
 systemctl enable sddm.service
 
 #cli system tools
+echo "deb https://deb.volian.org/volian/ scar main" | sudo tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list
+wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg > /dev/null
 apt install zsh micro ranger docker nala htop bmon -y
 
 #cli fun
