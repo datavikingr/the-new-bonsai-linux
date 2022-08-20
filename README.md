@@ -4,7 +4,7 @@ My dots for the [berry window manager](https://github.com/JLErvin/berry), based 
 
 The user deleted their account since and never provided their dot files, so I volunteered to rebuild it from the ground up and ended up keeping it as my daily driver on my wife's old 2013 iMac. I'm running this set up on Ubuntu 22.04. I started with the server iso and built up to here. If you'd like to replicate that, seriously consider disabling cloud-init. Speeds up boot-time significantly and its a non-critical process.
 
-![2022-08-11-131802_2560x1440_scrot](https://user-images.githubusercontent.com/43792895/184194660-5a87fc39-6aa5-4ec6-9ad0-a4d1e02d5469.png)
+![dotsimage](https://user-images.githubusercontent.com/43792895/185729686-4baeb80b-ca64-4734-aa96-1f486143b599.png)
 The different distros action is powered by [distrobox](https://github.com/89luca89/distrobox)!
 
 # Dependencies:
@@ -36,7 +36,7 @@ The different distros action is powered by [distrobox](https://github.com/89luca
  - mainline - kernel management in the Debian family that doesn't hurt? yes, please, mate!
  - distrobox - distro-hopping is for suckers. Supports client GUI apps running on the host!! This is seriously magic!!
 
-# Installation
+# Installation in existing Debian-family install
 
 cd into your desired source folder. For instance, ~/code or ~/src. Then, the following:
 
@@ -62,4 +62,31 @@ bash installdots.sh
 Or
 ```
 ./installdots.sh
+```
+# Installation in chroot/Cubic
+
+From a fresh chroot in Cubic, with the desired .iso file.
+
+## clone the repo
+
+```
+git clone https://github.com/futurehaskins/dotfiles
+cd dotfiles
+```
+
+## seriously, review the code before running it.
+```
+cat cubic-install.sh
+```
+
+## use nano/vim/emacs/whatever to edit the script as desired.
+ Most of it is structural, but you might only like some of the optional packages. Feel free to comment them out.
+
+## run the script
+```
+bash cubic-install.sh
+``` 
+Or
+```
+./cubic-install.sh
 ```
