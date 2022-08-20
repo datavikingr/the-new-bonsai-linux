@@ -53,9 +53,11 @@ cat installdots.sh
 ```
 
 ## use nano/vim/emacs/whatever to edit the script as desired.
- Most of it is structural, but you might only like some of the optional packages. Feel free to comment them out.
+Most of it is structural, but you might only like some of the optional packages. Feel free to comment them out.
 
-## run the script
+## OPTION 1 of 2: run the script for pre-existing Debian-family installation
+This script assumes you're working from a pre-existing installation of a Debian-family distro and it will not disrupt your previous desktop(s). It will change your login manager.
+
 ```
 bash installdots.sh
 ``` 
@@ -63,26 +65,11 @@ Or
 ```
 ./installdots.sh
 ```
-# Installation in chroot/Cubic
 
-From a fresh chroot in Cubic, with the desired .iso file.
+## OPTION 2 of 2: run the script in chroot/Cubic
 
-## clone the repo
+This script asssumes you're working from a server .iso file. Edit to taste. If gnome is installed, it will remove it. I use this in production, you should comment that out if it is undesired behavior.  The intended use here is a lightweight, but relatively full-featured 'desktop environment' built from scratch.
 
-```
-git clone https://github.com/futurehaskins/dotfiles
-cd dotfiles
-```
-
-## seriously, review the code before running it.
-```
-cat cubic-install.sh
-```
-
-## use nano/vim/emacs/whatever to edit the script as desired.
- Most of it is structural, but you might only like some of the optional packages. Feel free to comment them out.
-
-## run the script
 ```
 bash cubic-install.sh
 ``` 
@@ -90,3 +77,24 @@ Or
 ```
 ./cubic-install.sh
 ```
+
+## add wifi.sh to sign into wifi
+```
+cd ~/.config/berry
+micro wifi.sh
+```
+
+and input the following:
+```
+#!/bin/bash
+
+nmcli r wifi on &
+nmcli wifi connect 'Your wifi's SSID (name) here' password 'your wifi's password here'
+```
+
+## finally, restart
+```
+sudo systemctl restart
+```
+
+From there, you'll reboot into sddm. select your 'desktop' in the bottom right dialog box - you're looking for berry. Sign in, and you're good to go.
