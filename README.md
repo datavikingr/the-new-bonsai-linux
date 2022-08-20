@@ -36,7 +36,7 @@ The different distros action is powered by [distrobox](https://github.com/89luca
  - mainline - kernel management in the Debian family that doesn't hurt? yes, please, mate!
  - distrobox - distro-hopping is for suckers. Supports client GUI apps running on the host!! This is seriously magic!!
 
-# Installation in existing Debian-family install
+# Installation
 
 cd into your desired source folder. For instance, ~/code or ~/src. Then, the following:
 
