@@ -22,8 +22,6 @@ sudo apt install wget curl apt-utils libx11-dev libxft-dev libxinerama-dev -y
 wget https://github.com/barnumbirr/berry-debian/releases/download/v0.1.11-1/berry_0.1.11-1_amd64_bullseye.deb
 sudo dpkg -i berry_0.1.11-1_amd64_bullseye.deb
 rm berry_0.1.11-1_amd64_bullseye.deb
-sudo rm -rf /usr/share/xsessions
-sudo mkdir /usr/share/xsessions/
 mv .config/berry/berry.desktop /usr/share/xsessions/
 sudo apt install sxhkd polybar rofi picom feh pulseaudio dunst xterm kitty thunar python3 python3-pip -y
 
@@ -83,7 +81,7 @@ alias neofetch='neofetch | lolcat'
 alias ..='cd ..'
 alias bonsai='cbonsai -S'
 alias news='curl us.getnews.tech'
-alias weather='curl wttr.in/~Joppa+MD'
+alias weather='curl wttr.in'
 alias moon='curl wttr.in/Moon'
 alias config='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 neofetch | lolcat
@@ -115,7 +113,7 @@ alias neofetch='neofetch | lolcat'
 alias ..='cd ..'
 alias bonsai='cbonsai -S'
 alias news='curl us.getnews.tech'
-alias weather='curl wttr.in/~Joppa+MD'
+alias weather='curl wttr.it'
 alias moon='curl wttr.in/Moon'
 alias config='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 neofetch | lolcat
