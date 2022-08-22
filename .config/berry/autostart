@@ -7,7 +7,6 @@ picom --config ~/.config/picom/picom.conf &
 bash ~/.config/polybar/launch.sh &
 pulseaudio &
 dunst &
-bash ~/.config/berry/wifi.sh &
 
 # Workspaces
 berryc name_desktop 0 " "
