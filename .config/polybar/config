@@ -12,8 +12,6 @@
 ;   To learn more about how to configure Polybar
 ;   go to https://github.com/polybar/polybar
 ;
-;   This config written for the geometry of 2560 pixel wide 
-;   monitor (Mac). Please tweak the configs accordingly.
 ;
 ;==========================================================
 
@@ -21,11 +19,35 @@
 pseudo-transparency = false
 
 [colors]
-background = #222
-background-alt = #444
-foreground = #3b573d
+background = #111
+background-alt = #777
+foreground = #507552
 foreground-alt = #74533e
 alert = #bd2c40
+
+[bar/mono]
+width = 100%
+height = 40
+offset-x = 0
+offset-y = 0
+radius = 0
+fixed-center = true
+background = ${colors.background}
+foreground = ${colors.foreground}
+line-size = 3
+line-color = #f00
+border-size = 0
+border-color = ${colors.foreground}
+padding-left = 5
+padding-right = 5
+module-margin-left = 5
+module-margin-right = 5
+font-0 = Hack Nerd Font:style=Regular:pixelsize=12;1
+modules-left = xwindow killwindow
+modules-center = workspaces
+modules-right = powermenu alsa eth wlan date
+tray-padding = 5
+tray-position = right
 
 [bar/left]
 width = 635
