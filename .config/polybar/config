@@ -33,86 +33,27 @@ offset-x = 0
 offset-y = 0
 radius = 0
 fixed-center = true
+font-0 = Hack Nerd Font:style=Regular:pixelsize=12;1
+font-1 = Hack Nerd Font:style=Regular:pixelsize=16;1
 background = ${colors.background}
 foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 border-size = 0
 border-color = ${colors.foreground}
-padding-left = 5
-padding-right = 5
-module-margin-left = 5
-module-margin-right = 5
-font-0 = Hack Nerd Font:style=Regular:pixelsize=12;1
-modules-left = xwindow killwindow
+padding-left = 1
+padding-right = 1
+module-margin-left = 2
+module-margin-right = 2
+modules-left = xwindow killwindow blank
 modules-center = workspaces
 modules-right = powermenu alsa eth wlan date
 tray-padding = 5
 tray-position = right
 
-[bar/left]
-width = 635
-height = 30
-offset-x = 5
-offset-y = 5
-radius = 10.0
-fixed-center = false
-background = ${colors.background}
-foreground = ${colors.foreground}
-line-size = 3
-line-color = #f00
-border-size = 0
-border-color = ${colors.foreground}
-padding-left = 1
-padding-right = 1
-module-margin-left = 0
-module-margin-right = 0
-font-0 = Hack Nerd Font:style=Regular:pixelsize=12;1
-modules-left = xwindow
-modules-right = killwindow
-
-[bar/center]
-width = 500
-height = 30
-offset-x = 1020
-offset-y = 5
-radius = 10.0
-fixed-center = true
-background = ${colors.background}
-foreground = ${colors.foreground}
-line-size = 3
-line-color = #f00
-border-size = 0
-border-color = ${colors.foreground}
-padding-left = 0
-padding-right = 1
-module-margin-left = 0
-module-margin-right = 0
-font-0 = Hack Nerd Font:style=Regular:pixelsize=16;1
-modules-center = workspaces
-
-[bar/right]
-width = 720
-height = 30
-offset-x = 1835
-offset-y = 5
-radius = 10.0
-fixed-center = false
-background = ${colors.background}
-foreground = ${colors.foreground}
-line-size = 3
-line-color = #f00
-border-size = 0
-border-color = ${colors.foreground}
-padding-left = 1
-padding-right = 1
-module-margin-left = 1
-module-margin-right = 1
-font-0 = Hack Nerd Font:style=Regular:pixelsize=12;1
-modules-left = powermenu
-modules-right = alsa eth wlan date
-tray-padding = 0
-tray-position = right
+[module/blank]
+type = custom/text
+content = "     "
 
 [module/xwindow]
 type = internal/xwindow
@@ -120,7 +61,7 @@ label = %title:0:50:...%
 
 [module/killwindow]
 type = custom/menu
-expand-right = false
+expand-right = true
 format-spacing = 1
 label-open = 
 label-open-foreground = ${colors.foreground-dark}
@@ -128,20 +69,23 @@ label-close = ﰸ
 label-close-foreground = ${colors.foreground}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
-menu-0-0 = 
-menu-0-0-exec = berryc window_close
-menu-0-1 = 
-menu-0-1-exec = berryc window_monocle
+menu-0-0 = 
+menu-0-0-exec = berryc window_monocle
+menu-0-1 = 
+menu-0-1-exec = berryc window_close
 
 [module/workspaces]
 type=internal/xworkspaces
 reverse-scroll = false
 format=<label-state>
+label-active-font = 2
 label-active-background= ${colors.background}
 label-active-foreground=${colors.foreground-dark}
 label-active-padding=0
+label-empty-font = 2
 label-empty-foreground = ${colors.background-alt}
 label-empty-padding=0
+label-occupied-font = 2
 label-occupied-background=${colors.background}
 label-occupied-foreground=${colors.foreground-alt}
 
@@ -216,9 +160,7 @@ date = " %Y.%m.%d"
 date-alt = " %Y.%m.%d"
 time = %H.%M
 time-alt = %H.%M.%S
-format-prefix = 
-format-prefix-foreground = ${colors.foreground-alt}
-label = %date%.%time%
+label =  %date%.%time%
 
 [module/alsa]
 type = internal/alsa
@@ -254,7 +196,7 @@ label = %temperature-c%
 
 [module/powermenu]
 type = custom/menu
-expand-right = true
+expand-right = false
 format-spacing = 1
 label-open = "⏻ "
 label-open-foreground = ${colors.foreground-dark}
@@ -262,10 +204,10 @@ label-close = "ﰸ "
 label-close-foreground = ${colors.foreground-dark}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
-menu-0-0 = "ﰇ "
-menu-0-0-exec = systemctl reboot
-menu-0-1 = " "
-menu-0-1-exec = systemctl poweroff
+menu-0-0 = " "
+menu-0-0-exec = systemctl poweroff
+menu-0-1 = "ﰇ "
+menu-0-1-exec = systemctl reboot
 menu-0-2 = " "
 menu-0-2-exec = systemctl suspend
 
