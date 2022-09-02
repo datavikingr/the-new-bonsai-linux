@@ -45,7 +45,7 @@ padding-left = 1
 padding-right = 1
 module-margin-left = 2
 module-margin-right = 2
-modules-left = xwindow killwindow blank
+modules-left = rofi xwindow killwindow blank
 modules-center = workspaces
 modules-right = powermenu alsa eth wlan date
 tray-padding = 5
@@ -54,6 +54,11 @@ tray-position = right
 [module/blank]
 type = custom/text
 content = "     "
+
+[module/rofi]
+type = custom/text
+content = ""
+click-left = rofi -show drun
 
 [module/xwindow]
 type = internal/xwindow
