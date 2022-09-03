@@ -58,12 +58,12 @@ actually, yeah. that's a real deep cut there, homie. bonzai linux "prime" stoppe
  - godot - the best, free game engine on the market - and that was before unity shot themselves both of their feet
  
 # Roadmap:
- 1.  gather and provide all of the licenses in one easy-to-access folder. Better than hunting them down online each time.
+ 1.  ~gather and provide all of the licenses in one easy-to-access folder. Better than hunting them down online each time.~
  2.  ~1080p monitor support with polybar, I may also tweak colors for more pop.~
  3.  [cassowary](https://github.com/casualsnek/cassowary), so I can add windows applications to the available software (I need powerBI for work)
- 4.  chekcing godot's licensing, to see if I'm allowed to include it in the script, and if so, add it!
+ 4.  ~checking godot's licensing~, add Godot to both scripts.
  5.  [wtfutil](https://github.com/wtfutil/wtf) - I have a vertical dashboard config already, I need to make it horizontal and install that. pending a licensing doublecheck.
- 6.  better GTK/QT theming. looking at thunar is painful.
+ 6.  better GTK/QT theming. looking at thunar is painful. need lxsessions, I think.
  7.  adding automatic creation of three distroboxes (arch, debian, fedora) to the install scripts. they are not currently included.
  8.  update script that updates across all various package managers installed on the host.
  9.  a boot splash screen
