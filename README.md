@@ -1,5 +1,5 @@
 # Bonsai Linux
-the new bonsai linux, with ubuntu server at its core; and debian, arch, and fedora as integrated components; and a bonsai-themed, berry desktop; dev application suite.
+
 
 ![dotsimage](https://user-images.githubusercontent.com/43792895/185729686-4baeb80b-ca64-4734-aa96-1f486143b599.png)
 
@@ -21,17 +21,29 @@ actually, yeah. that's a real deep cut there, homie. bonzai linux "prime" stoppe
  - nerd cred - this is nerd-cool and you know it \~tiling window hacker aesthetic~
 
 # Features:
- - rolling release Ubuntu (big thanks to [wimpysworld](https://github.com/wimpysworld) for this absolute power move)
- - snap-free, cloud-init free, gnome-free Ubuntu
- - seriously light weight
- - tiling window managers are pretty cool; powered by berry, berrytile
- - flatpak, pacstall, deb-get, homebrew, and nala bring all of the packages home to roost!
- - seemless dnf, pacman, aur package integration in the application launcher
- - nala is way faster and prettier than apt. don't forget to ```nala fetch```!
+ - snap-free, cloud-init free, gnome-free, rolling release Ubuntu at the core
+   - nala front-end for apt for faster updates
+   - flatpak, pacstall, deb-get and homebrew for maximal package access
+ - arch, debian, and fedora as components of the core, powered by distrobox
+   - seemless dnf, pacman, aur package integration into the system
+ - seriously light weight micro-desktop berry window manager
+   - preconfigured sxhkd, with sane keybinds and 10 desktops
  - powerful system admin tools with timeshift, stacer, garted, and mainline
- - custom neofetch, neofetch config (really minimal tweaks, lemme not overstate this)
+   - kernel-level management, even in ubuntu
+ 
+# Roadmap:
+ 1.  ~gather and provide all of the licenses in one easy-to-access folder. Better than hunting them down online each time.~
+ 2.  ~1080p monitor support with polybar, I may also tweak colors for more pop.~
+ 3.  [cassowary](https://github.com/casualsnek/cassowary), so I can add windows applications to the available software (I need powerBI for work)
+ 4.  ~checking godot's licensing~, add Godot to both scripts.
+ 5.  [wtfutil](https://github.com/wtfutil/wtf) - I have a vertical dashboard config already, I need to make it horizontal and install that. pending a licensing doublecheck.
+ 6.  better GTK/QT theming. looking at thunar is painful. need lxsessions, I think.
+ 7.  adding automatic creation of three distroboxes (arch, debian, fedora) to the install scripts. they are not currently included.
+ 8.  update script that updates across all various package managers installed on the host.
+ 9.  a boot splash screen
+ 10. branding, I guess? it's basically a whole distrubution already, may as well lean into it.
 
-# App List:
+# App Suite:
  - sxhkd - hotkeys
  - rofi - program launcher
  - kitty - a lightweight terminal emulator with image support - great for custom neofetch configs!
@@ -57,18 +69,6 @@ actually, yeah. that's a real deep cut there, homie. bonzai linux "prime" stoppe
  - mainline - kernel management in the Debian family that doesn't hurt? yes, please, mate!
  - distrobox - distro-hopping is for suckers. Supports client GUI apps running on the host!! This is seriously magic!!
  - godot - the best, free game engine on the market - and that was before unity shot themselves both of their feet
- 
-# Roadmap:
- 1.  ~gather and provide all of the licenses in one easy-to-access folder. Better than hunting them down online each time.~
- 2.  ~1080p monitor support with polybar, I may also tweak colors for more pop.~
- 3.  [cassowary](https://github.com/casualsnek/cassowary), so I can add windows applications to the available software (I need powerBI for work)
- 4.  ~checking godot's licensing~, add Godot to both scripts.
- 5.  [wtfutil](https://github.com/wtfutil/wtf) - I have a vertical dashboard config already, I need to make it horizontal and install that. pending a licensing doublecheck.
- 6.  better GTK/QT theming. looking at thunar is painful. need lxsessions, I think.
- 7.  adding automatic creation of three distroboxes (arch, debian, fedora) to the install scripts. they are not currently included.
- 8.  update script that updates across all various package managers installed on the host.
- 9.  a boot splash screen
- 10. branding, I guess? it's basically a whole distrubution already, may as well lean into it.
 
 # Installation Method 1: installdots.sh - for trying a new desktop from an already installed Debian-family distro
 cd into your desired source folder; for instance, ~/code or ~/src. 
