@@ -1,5 +1,6 @@
 # Bonsai Linux
-a more curated linux experience
+the new bonsai linux, with ubuntu server at its core; and debian, arch, and fedora as integrated components; and a bonsai-themed, berry desktop; dev application suite.
+
 ![dotsimage](https://user-images.githubusercontent.com/43792895/185729686-4baeb80b-ca64-4734-aa96-1f486143b599.png)
 
 this started as my dots for the [berry window manager](https://github.com/JLErvin/berry), based on a [post I saw on reddit](https://www.reddit.com/r/unixporn/comments/vcphbh/berry_pine/), but its kinda become something a little bigger than that. halfway between a rice and a full distro/respin in its own right, it's something... different. 
