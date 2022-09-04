@@ -215,6 +215,8 @@ menu-0-1 = "ﰇ "
 menu-0-1-exec = systemctl reboot
 menu-0-2 = " "
 menu-0-2-exec = systemctl suspend
+menu-0-3 = ""
+menu-0-3-exec = berryc quit
 
 [settings]
 screenchange-reload = true

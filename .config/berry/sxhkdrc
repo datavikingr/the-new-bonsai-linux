@@ -41,8 +41,11 @@ super + d
 #####################
 
 # restart desktop, or poly/sxhkd
-ctrl + alt + {Delete, Escape}
-       {pkill -USR1 -x berry, bash ~/rpoly & pkill -USR1 -x sxhkd}
+ctrl + alt + q
+       bash ~/rpoly & pkill -USR1 -x sxhkd
+
+ctrl + alt + Escape
+       berryc quit
 
 ###############
 # Window Mgmt #
