@@ -11,14 +11,14 @@ dunst &
 # Workspaces
 berryc name_desktop 0 " "
 berryc name_desktop 1 "  "
-berryc name_desktop 2 "  "
-berryc name_desktop 3 "  "
-berryc name_desktop 4 "  "
+berryc name_desktop 2 "  "
+berryc name_desktop 3 "  "
+berryc name_desktop 4 "  "
 berryc name_desktop 5 "爵 "
 berryc name_desktop 6 " ﭮ "
 berryc name_desktop 7 "  "
 berryc name_desktop 8 "  "
-berryc name_desktop 9 "  "
+berryc name_desktop 9 " "
 
 # Set Window Options
 berryc border_width       3

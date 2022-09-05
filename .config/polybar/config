@@ -57,7 +57,7 @@ content = "     "
 
 [module/rofi]
 type = custom/text
-content = ""
+content = " 串"
 click-left = rofi -show drun
 
 [module/xwindow]
@@ -213,10 +213,10 @@ menu-0-0 = " "
 menu-0-0-exec = systemctl poweroff
 menu-0-1 = "ﰇ "
 menu-0-1-exec = systemctl reboot
-menu-0-2 = " "
-menu-0-2-exec = systemctl suspend
-menu-0-3 = ""
-menu-0-3-exec = berryc quit
+menu-0-2 = ""
+menu-0-2-exec = berryc quit
+menu-0-3 = " "
+menu-0-3-exec = systemctl suspend
 
 [settings]
 screenchange-reload = true
