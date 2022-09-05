@@ -4,7 +4,7 @@
 
 # host terminal emulator
 super + Return
-	berryc switch_workspace 4 && kitty
+	berryc switch_workspace 3 && kitty
 
 # distrobox terminals
 super + alt + a

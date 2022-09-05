@@ -57,11 +57,13 @@ content = "     "
 
 [module/rofi]
 type = custom/text
+content-font = 2
 content = " 串"
 click-left = rofi -show drun
 
 [module/xwindow]
 type = internal/xwindow
+label-font = 1
 label = %title:0:50:...%
 
 [module/killwindow]
