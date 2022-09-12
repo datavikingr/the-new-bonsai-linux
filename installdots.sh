@@ -1,21 +1,11 @@
 #!/bin/bash
 
 # installdots.sh - Written by Alex Haskins
-# written as an install package 
 
 #init
 repofolder=$(pwd)
 sudo apt update
 clear
-
-#kill snap
-sudo systemctl stop snapd
-sudo apt remove --purge snapd -y
-rm -rf ~/snap/
-sudo rm -rf /var/cache/snapd/
-
-#kill cloud-init
-sudo touch /etc/cloud/cloud-init.disabled
 
 #berry and dependencies
 sudo apt install wget curl apt-utils libx11-dev libxft-dev libxinerama-dev -y
@@ -23,7 +13,7 @@ wget https://github.com/barnumbirr/berry-debian/releases/download/v0.1.11-1/berr
 sudo dpkg -i berry_0.1.11-1_amd64_bullseye.deb
 rm berry_0.1.11-1_amd64_bullseye.deb
 mv .config/berry/berry.desktop /usr/share/xsessions/
-sudo apt install sxhkd polybar rofi picom feh pulseaudio dunst xterm kitty thunar python3 python3-pip -y
+sudo apt install sxhkd polybar rofi picom feh pulseaudio dunst xterm kitty python3 python3-pip -y
 
 #sddm and dependencies
 sudo apt install sddm qml-module-qtquick-layouts qml-module-qtquick-controls2 qml-module-qtquick-templates2 qml-module-qtgraphicaleffects -y
@@ -34,31 +24,10 @@ sudo systemctl enable sddm.service
 #cli system tools
 echo "deb https://deb.volian.org/volian/ scar main" | sudo tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list
 wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg > /dev/null
-sudo apt install zsh micro ranger docker nala htop bmon -y
+sudo apt install zsh nala -y
 
 #cli fun
-sudo apt install lolcat neofetch gnugo gnuchess cbonsai cmatrix fortune-mod nethack-console -y
-
-#flatpak
-sudo apt install flatpak -y
-sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
-#gui system utilities
-sudo add-apt-repository ppa:oguzhaninan/stacer -y
-sudo add-apt-repository ppa:cappelikan/ppa
-sudo apt-get update
-sudo apt-get install notepadqq scrot timeshift gparted stacer mainline -y
-curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | /bin/bash
-
-#homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-#pacstall
-sudo bash -c "$(curl -fsSL https://git.io/JsADh || wget -q https://git.io/JsADh -O -)"
-
-#deb-get
-curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | sudo -E bash -s install deb-get
-sudo deb-get install brave-browser discord
+sudo apt install lolcat -y
 
 #powerline
 pip install powerline-shell
