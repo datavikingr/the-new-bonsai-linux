@@ -29,7 +29,6 @@ rm berry_0.1.11-1_amd64_bullseye.deb
 rm -rf /usr/share/xsessions/
 mv .config/berry/berry.desktop /usr/share/xsessions/
 apt install sxhkd polybar rofi picom feh pulseaudio dunst xterm kitty thunar python3 python3-pip lxappearance -y
-apt install lxsession --no-install-recommends
 
 #sddm and dependencies
 apt install sddm qml-module-qtquick-layouts qml-module-qtquick-controls2 qml-module-qtquick-templates2 qml-module-qtgraphicaleffects -y
