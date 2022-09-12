@@ -5,11 +5,8 @@ Grow the branches you like
 
 this started as my dots for the [berry window manager](https://github.com/JLErvin/berry), based on a [post I saw on reddit](https://www.reddit.com/r/unixporn/comments/vcphbh/berry_pine/), but its kinda become something a little bigger than that. halfway between a rice and a full distro/respin in its own right, it's something... different. the original user deleted their account and never provided their dot files, so I volunteered to rebuild it from the ground up and ended up keeping it as my daily driver on my wife's old 2013 iMac, which is now my primary dev environment.
 
-# Bonsai Linux? Isn't that another distro?
-actually, yeah. that's a real deep cut there, mate. bonzai linux "prime" stopped getting developed in 2004. nobody else was using the name, so I picked it up. this project is unrelated to the previous project.
-
-# So Why That Name?
-because you cultivate the branch(es) you prefer. whether it's debian, fedora, arch, or another distro you grafted onto the trunk, you decide what to build. and whatever you do decide to grow, seemlessly integrates with the trunk (the Ubunbtu-berry core), even GUI applications.
+# Bonsai Linux - why that name?
+actually, yeah. that's a real deep cut there, mate. bonzai linux "prime" stopped getting developed in 2004. nobody else was using the name, so I picked it up. this project is unrelated to the previous project. I picked that name because you cultivate the branch(es) you prefer. whether it's debian, fedora, arch, or another distro you grafted onto the trunk, you decide what to build. and whatever you do decide to grow, seemlessly integrates with the trunk (the Ubunbtu-berry core), even GUI applications.
 
 # Why?
  - backups - all my personal files are in the cloud, so reinstalling my setup is my primary pain point 
