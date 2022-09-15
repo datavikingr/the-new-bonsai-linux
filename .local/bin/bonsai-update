@@ -1,0 +1,43 @@
+#!/bin/bash
+#bonsai-update - written by Alex Haskins
+#Updates all the various packages, package managers, and branches on the new bonsai linux
+
+#pacstall
+pacstall -U
+pacstall -Up
+
+#deb-get
+sudo deb-get update
+sudo deb-get upgrade
+sudo deb-get clean
+
+#nala
+sudo nala upgrade
+sudo nala autopurge
+sudo nala clean
+
+
+#apt
+sudo apt update
+sudo apt upgrade
+sudo apt autoremove
+sudo apt clean
+
+#homebrew
+brew update
+brew upgrade
+brew cleanup
+
+#distrobox arch
+distrobox-enter arch -T -- sudo pacman -Syu
+distrobox-enter arch -T -- sudo pacman -Qdt
+distrobox-enter arch -T -- sudo pacman -Scc
+
+#distrobox debian
+distrobox-enter debian -T -- sudo apt update
+distrobox-enter debian -T -- sudo apt upgrade
+distrobox-enter debian -T -- sudo apt autoremove
+distrobox-enter debian -T -- sudo apt clean
+
+#distrobox fedora
+distrobox-enter fedora -T -- sudo dnf install
