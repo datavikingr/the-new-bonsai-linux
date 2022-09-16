@@ -3,32 +3,32 @@ from powerline_shell.themes.default import DefaultColor
 
 class Color(DefaultColor):
     """Pine theme"""
-    USERNAME_FG = 7
+    USERNAME_FG = 15
     USERNAME_BG = 23
     USERNAME_ROOT_BG = 1
 
-    HOSTNAME_FG = 7
+    HOSTNAME_FG = 15
     HOSTNAME_BG = 22
 
     HOME_SPECIAL_DISPLAY = False
     PATH_BG = 28
-    PATH_FG = 7  
+    PATH_FG = 15
     CWD_FG = 15  
-    SEPARATOR_FG = 7
+    SEPARATOR_FG = 15
 
     READONLY_BG = 1
-    READONLY_FG = 7
+    READONLY_FG = 15
 
     REPO_CLEAN_BG = 2   
     REPO_CLEAN_FG = 15   
     REPO_DIRTY_BG = 1   
-    REPO_DIRTY_FG = 7  
+    REPO_DIRTY_FG = 15
 
-    JOBS_FG = 7
+    JOBS_FG = 15
     JOBS_BG = 2
 
     CMD_PASSED_BG = 29
-    CMD_PASSED_FG = 7
+    CMD_PASSED_FG = 15
     CMD_FAILED_BG = 9
     CMD_FAILED_FG = 0
 
@@ -41,5 +41,5 @@ class Color(DefaultColor):
 #    AWS_PROFILE_FG = 14
 #    AWS_PROFILE_BG = 8
 
-    TIME_FG = 7
+    TIME_FG = 15
     TIME_BG = 24

@@ -7,6 +7,7 @@ picom --config ~/.config/picom/picom.conf &
 bash ~/.config/polybar/launch.sh &
 pulseaudio &
 dunst &
+dunstify -a "Bonsai Linux" "A more cultivated Linux experience" &
 
 # Workspaces
 berryc name_desktop 0 "  "
@@ -36,3 +37,19 @@ berryc smart_place 		"true"
 berryc draw_text   		"true"
 berryc edge_lock   		"true"
 berryc set_font    		"Hack-11"
+
+###############################
+#      Colors Reference       #
+###############################
+#Color:    #Normal // #Bright #
+###############################
+#BG/FG:    #101010 // #72A776 # 
+#Black:    #101010 // #242424 # 0/08
+#Red:      #851E2C // #BD5967 # 1/09
+#Green:    #3B573D // #618E64 # 2/10
+#Yellow:   #74533E // #C88356 # 3/11
+#Blue:     #005F87 // #7A9EC2 # 4/12
+#Purple:   #624C8F // #B994E9 # 5/13
+#Cyan:     #005f5f // #6DAFB0 # 6/14
+#White:    #777777 // #CCCCCC # 7/15
+###############################
