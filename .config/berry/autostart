@@ -7,7 +7,7 @@ picom --config ~/.config/picom/picom.conf &
 bash ~/.config/polybar/launch.sh &
 pulseaudio &
 dunst &
-dunstify -a "Bonsai Linux" "A more cultivated Linux experience" &
+dunstify -a "Bonsai Linux" "Welcome to a more cultivated Linux experience." &
 
 # Workspaces
 berryc name_desktop 0 "  "
