@@ -124,5 +124,7 @@ alias news='curl us.getnews.tech'
 alias weather='curl wttr.in'
 alias moon='curl wttr.in/Moon'
 alias config='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
+alias gitlog="git log --graph -n 5 --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias configlog="config log --graph -n 5 --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 neofetch | lolcat
