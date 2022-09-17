@@ -1,8 +1,7 @@
 # Bonsai Linux
 Grow the branches you like
 
-![dotsimage](![image](https://user-images.githubusercontent.com/43792895/190839329-15411ad2-3722-4f8d-8f8a-3fb2214e5f93.png)
-)
+![image](https://user-images.githubusercontent.com/43792895/190839402-ffac44e7-b91f-4c40-8b06-3311b66c2dfe.png)
 
 this started as my dots for the [berry window manager](https://github.com/JLErvin/berry), based on a [post I saw on reddit](https://www.reddit.com/r/unixporn/comments/vcphbh/berry_pine/), but its kinda become something a little bigger than that. halfway between a rice and a full distro/respin in its own right, it's something... different. the original user deleted their account and never provided their dot files, so I volunteered to rebuild it from the ground up and ended up keeping it as my daily driver on my wife's old 2013 iMac, which is now my primary dev environment.
 
