@@ -5,7 +5,7 @@ Grow the branches you like
 
 this started as my dots for the [berry window manager](https://github.com/JLErvin/berry), based on a [post I saw on reddit](https://www.reddit.com/r/unixporn/comments/vcphbh/berry_pine/), but its kinda become something a little bigger than that. halfway between a rice and a full distro/respin in its own right, it's something... different. the original user deleted their account and never provided their dot files, so I volunteered to rebuild it from the ground up and ended up keeping it as my daily driver on my wife's old 2013 iMac, which is now my primary dev environment.
 
-# Bonsai Linux - why that name?
+# Bonsai Linux?
 actually, yeah. that's a real deep cut there, mate. bonzai linux "prime" stopped getting developed in 2004. nobody else was using the name, so I picked it up. this project is unrelated to the previous project. I picked that name because you cultivate the branch(es) you prefer. whether it's debian, fedora, arch, or another distro you grafted onto the trunk, you decide what to build. and whatever you do decide to grow, seemlessly integrates with the trunk (the Ubunbtu-berry core), even GUI applications.
 
 # Why?
@@ -22,9 +22,11 @@ actually, yeah. that's a real deep cut there, mate. bonzai linux "prime" stopped
  - arch, debian, and fedora as the default branches from the trunk
    - seemless dnf, pacman, aur package integration into the system
  - seriously light weight micro-desktop berry window manager
-   - preconfigured sxhkd, with sane keybinds and 10 desktops
+   - preconfigured sxhkd, with sane keybinds, purpose-driven desktops, beautiful theming
  - powerful system admin tools with timeshift, stacer, garted, and mainline
    - kernel-level management, even in ubuntu
+ - bonsai-update
+   - front-end for updating all of the system's packages at once (even distrobox)
  
 # Roadmap & Notes:
  1.  ~Licenses gathered and held in local directory~ COMPLETE
@@ -32,13 +34,15 @@ actually, yeah. that's a real deep cut there, mate. bonzai linux "prime" stopped
  3.  ~[cassowary](https://github.com/casualsnek/cassowary)~ NON-VIABLE
  4.  ~add Godot to both scripts~ COMPLETE
  5.  [wtfutil](https://github.com/wtfutil/wtf): add a default dashboard
- 6.  better GTK/QT theming
+ 6.  better GTK & QT theming - thunar in particular is too bright
  7.  ~adding automatic creation of three distroboxes (arch, debian, fedora) to the install scripts.~ COMPLETE
- 8.  write update script that updates across all various package managers installed on the trunk.
+ 8.  ~write update script that updates across all various package managers installed on the trunk.~
+ 	 (bonsai-update distro is currently bugged out. Wait for  distrobox >1.4.1)
  9.  a boot splash screen - Plymouth???
  10. npm? ruby's gems? maybe some other package managers?
  11. branding, I guess? it's basically a whole distrubution already, may as well lean into it.
- 12. ~terminal color design and themes~
+ 12. ~terminal & cli apps theming; including a color scheme~
+ 13. Revamp futurehaskins.github.io as a pseudo-resume (with start page in the same directory)
 
 # App Suite:
  - sxhkd - hotkeys
@@ -59,6 +63,7 @@ actually, yeah. that's a real deep cut there, mate. bonzai linux "prime" stopped
  - homebrew - Mac's missing package manager - that works great on Linux, too!
  - sddm - graphical login manager (calling them display managers is confusing)
  - distrobox - client GUI apps running on the host!! This is seriously magic!!
+ - tuir - a cli reddit client
  - kitty - a lightweight terminal emulator with image support - great for custom neofetch configs!
  - thunar - file manager
  - notepadqq - a GUI text editor and 'clone' of Notepad++
@@ -67,6 +72,8 @@ actually, yeah. that's a real deep cut there, mate. bonzai linux "prime" stopped
  - timeshift - Super-powerful backup and restore application.
  - stacer - GUI top/htop, but on steroids with a sleek and modern UX/UI.
  - mainline - kernel management in the Debian family that doesn't hurt? yes, please, mate!
+ - gsw - a git log/status poller written in bash.
+ - bonsai-update - update front-end for every branch written in bash
 
 # Installation Method 1: installdots.sh - for trying a new desktop from an already installed Debian-family distro
 cd into your desired source folder; for instance, ~/code or ~/src. 
@@ -95,3 +102,6 @@ cd dotfiles
 ./cubic-install.sh
 ```
 click continue in the top right of cubic's window, finish it up, and flash it on to a thumbdrive. install it like you would any other distro.
+
+# Installation Method 3: bonsailinux.iso
+Coming soon. I'll probably host it in Google Drive, bear with me.
