@@ -32,7 +32,7 @@ berryc inner_focus_color   3b573d
 berryc inner_unfocus_color 74533e
 berryc text_focus_color    111111
 berryc text_unfocus_color  eeeeee
-berryc decorate_new 	"true"
+berryc decorate_new 	"false"
 berryc smart_place 		"true"
 berryc draw_text   		"true"
 berryc edge_lock   		"true"
