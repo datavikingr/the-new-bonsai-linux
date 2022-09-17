@@ -1,7 +1,8 @@
 # Bonsai Linux
 Grow the branches you like
 
-![dotsimage](https://user-images.githubusercontent.com/43792895/185729686-4baeb80b-ca64-4734-aa96-1f486143b599.png)
+![dotsimage](![image](https://user-images.githubusercontent.com/43792895/190839329-15411ad2-3722-4f8d-8f8a-3fb2214e5f93.png)
+)
 
 this started as my dots for the [berry window manager](https://github.com/JLErvin/berry), based on a [post I saw on reddit](https://www.reddit.com/r/unixporn/comments/vcphbh/berry_pine/), but its kinda become something a little bigger than that. halfway between a rice and a full distro/respin in its own right, it's something... different. the original user deleted their account and never provided their dot files, so I volunteered to rebuild it from the ground up and ended up keeping it as my daily driver on my wife's old 2013 iMac, which is now my primary dev environment.
 
@@ -38,6 +39,7 @@ actually, yeah. that's a real deep cut there, mate. bonzai linux "prime" stopped
  9.  a boot splash screen - Plymouth???
  10. npm? ruby's gems? maybe some other package managers?
  11. branding, I guess? it's basically a whole distrubution already, may as well lean into it.
+ 12. ~terminal color design and themes~
 
 # App Suite:
  - sxhkd - hotkeys
