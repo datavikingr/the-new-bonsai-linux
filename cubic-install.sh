@@ -27,12 +27,14 @@ wget https://github.com/barnumbirr/berry-debian/releases/download/v0.1.11-1/berr
 dpkg -i berry_0.1.11-1_amd64_bullseye.deb
 rm berry_0.1.11-1_amd64_bullseye.deb
 rm -rf /usr/share/xsessions/
+mkdir -p /usr/share/xsessions
 mv .config/berry/berry.desktop /usr/share/xsessions/
 apt install sxhkd polybar rofi picom feh pulseaudio dunst xterm kitty thunar python3 python3-pip lxappearance -y
 
 #sddm and dependencies
 apt install sddm qml-module-qtquick-layouts qml-module-qtquick-controls2 qml-module-qtquick-templates2 qml-module-qtgraphicaleffects -y
 cp .config/sddm/etc-sddm.conf /etc/sddm.conf
+mkdir -p /usr/share/sddm/themes/mount/
 cp -r .config/sddm/mount/* /usr/share/sddm/themes/mount/
 systemctl enable sddm.service
 
@@ -50,7 +52,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 #gui system utilities
 add-apt-repository ppa:oguzhaninan/stacer -y
-add-apt-repository ppa:cappelikan/ppa
+add-apt-repository ppa:cappelikan/ppa -y
 apt-get update
 apt-get install notepadqq scrot timeshift gparted stacer mainline -y
 
@@ -151,8 +153,6 @@ cp -r .config/ /etc/skel/
 cp .local/bin/* /etc/skel/.local/bin/
 
 #cleanup
-cd ..
-rm -r dotfiles/
 apt autoremove -y
 apt autoclean -y
 apt update 
