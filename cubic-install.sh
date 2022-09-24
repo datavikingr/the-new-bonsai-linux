@@ -19,7 +19,7 @@ touch /etc/cloud/cloud-init.disabled
 
 #kill gnome, if present
 apt remove --purge gdm3 gnome-shell -y
-apt automremove
+apt autoremove
 
 #berry and dependencies
 apt install wget curl apt-utils libx11-dev libxft-dev libxinerama-dev -y
