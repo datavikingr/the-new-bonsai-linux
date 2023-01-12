@@ -3,15 +3,15 @@ Grow the branches you like
 
 ![image](https://user-images.githubusercontent.com/43792895/190839402-ffac44e7-b91f-4c40-8b06-3311b66c2dfe.png)
 
-this started as my dots for the [berry window manager](https://github.com/JLErvin/berry), based on a [post I saw on reddit](https://www.reddit.com/r/unixporn/comments/vcphbh/berry_pine/), but its kinda become something a little bigger than that. halfway between a rice and a full distro/respin in its own right, it's something... different. the original user deleted their account and never provided their dot files, so I volunteered to rebuild it from the ground up and ended up keeping it as my daily driver on my wife's old 2013 iMac, which is now my primary dev environment.
+this started as my dots for the [berry window manager](https://github.com/JLErvin/berry), based on a [post I saw on reddit](https://www.reddit.com/r/unixporn/comments/vcphbh/berry_pine/), but its kinda become something a little bigger than that. halfway between a rice and a full distro/respin in its own right, it's something... different. the original user deleted their account and never provided their dot files, so I volunteered to rebuild it from the ground up and ended up keeping it as my daily driver on my wife's old 2013 iMac, which is now my ~~primary dev environment~~ I've since run home to KDE.
 
 # Bonsai Linux?
-actually, yeah. that's a real deep cut there, mate. bonzai linux "prime" stopped getting developed in 2004. nobody else was using the name, so I picked it up. this project is unrelated to the previous project. I picked that name because you cultivate the branch(es) you prefer. whether it's debian, fedora, arch, or another distro you grafted onto the trunk, you decide what to build. and whatever you do decide to grow, seemlessly integrates with the trunk (the Ubunbtu-berry core), even GUI applications.
+actually, yeah. that's a real deep cut there, mate. bonzai linux "prime" stopped getting developed in 2004. nobody else was using the name, so I picked it up. this project is unrelated to the previous project. I picked that name because you cultivate the branch(es) you prefer. whether it's debian, fedora, arch, or another distro you grafted onto the trunk, you decide what to build, all powered by distrobox. and whatever you do decide to grow, seemlessly integrates with the trunk (the Ubunbtu-berry core), even the GUI applications.
 
 # Why?
  - backups - all my personal files are in the cloud, so reinstalling my setup is my primary pain point 
  - education - it's my first time building a distro/respin, so this was a learning experience to say the least.
- - production - I'm using bonsai to develop bonsai which presents its own challenges, but accelerates testing.
+ - production - I'm using bonsai to develop bonsai which presents its own challenges, but accelerates testing. (I embraced the chaos - lol)
  - awe - I am still amazed by different distros running on the same computer, powered by [distrobox](https://github.com/89luca89/distrobox)!
  - nerd cred - this is nerd-cool and you know it.
 
@@ -42,7 +42,7 @@ actually, yeah. that's a real deep cut there, mate. bonzai linux "prime" stopped
  10. npm? ruby's gems? maybe some other package managers?
  11. branding, I guess? it's basically a whole distrubution already, may as well lean into it.
  12. ~terminal & cli apps theming; including a color scheme~
- 13. Revamp futurehaskins.github.io as a pseudo-resume (with start page in the same directory)
+ 13. Revamp futurehaskins.github.io as a pseudo-resume and front page for the project (with start page in the same directory, unlinked)
 
 # App Suite:
  - sxhkd - hotkeys
